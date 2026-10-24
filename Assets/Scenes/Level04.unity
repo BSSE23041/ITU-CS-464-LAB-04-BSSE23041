@@ -2287,11 +2287,6 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 80
   m_CollisionDetection: 0
---- !u!4 &544294078 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6760309724886411606, guid: ea9c47daf55d4024aac7bce657046f8d, type: 3}
-  m_PrefabInstance: {fileID: 1763998868}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &547786606
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4920,10 +4915,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 6760309724886411606, guid: ea9c47daf55d4024aac7bce657046f8d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1822307553}
+    m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8113324411172411790, guid: ea9c47daf55d4024aac7bce657046f8d, type: 3}
       insertIndex: -1
@@ -5013,6 +5005,7 @@ GameObject:
   - component: {fileID: 1822307552}
   - component: {fileID: 1822307551}
   - component: {fileID: 1822307554}
+  - component: {fileID: 1822307555}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -5087,12 +5080,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1822307550}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.31190863, y: 0.033918645, z: -0.011131956, w: 0.9494412}
-  m_LocalPosition: {x: 1.320393, y: 5.9446383, z: -4.73327}
+  m_LocalRotation: {x: 0.22842418, y: -0.6473722, z: 0.21268122, w: 0.69534045}
+  m_LocalPosition: {x: 6.8432703, y: 6.788638, z: -3.9296064}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 544294078}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1822307554
 MonoBehaviour:
@@ -5138,6 +5131,23 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &1822307555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822307550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77f246167f4ba93429b793273189a106, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
+  target: {fileID: 0}
+  offset: {x: 0, y: 4, z: -7}
+  positionSmooth: 10
+  rotationSmooth: 10
+  lookHeight: 1
 --- !u!1001 &1826916206
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5882,6 +5892,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1822307553}
   - {fileID: 141001833}
   - {fileID: 989809917927422980}
   - {fileID: 515843274}
